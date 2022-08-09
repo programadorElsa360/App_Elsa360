@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <link rel="icon" href="images/E-de-ELSA.ico">
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Aquí, se, coloca, cada, palabra, clave">
+        <meta name="description" content="Aquí se escribe, de que es la pagina">
+        <meta name="author" content="Aquí se escribe, quién hizo la página">
+        <meta name="copyright" content="Aquí se escribe quién tiene los derechos de la empresa dueña de la página">
+        <meta name="robots" content="noindex">
+        <title>Preguntas - ELSA360</title>
+        <link rel="stylesheet" href="css/preguntas.css">
+        <script src="https://kit.fontawesome.com/073af2aaa4.js" crossorigin="anonymous"></script>  
+    </head>    
+
+    <body>
+
+
+        <!-- Preguntas -->
+        <div class="Titulo"><h1>Estos datos nos ayudan a darte el mejor plan personalizado</h1></div>
+
+        <div class="container">
+            <form id="Preguntas1">
+                <h3>Datos personales</h3>
+                <div class="content-select">
+                    <select name="genero">
+                        <option value="-1" disabled selected>¿Cúal es tu género?</option>
+                        <option value="hombre">Hombre</option> 
+                        <option value="mujer">Mujer</option>                  
+                    </select>
+                    <i></i>
+                    <input type="number" name="Edad" placeholder="¿Cuántos años tienes?">
+                    <input type="number" name="Estatura" placeholder="¿Cuánto mides (cms)? (Ej: 174)">
+                    
+                    
+                </div>
+                <div class="campo">
+                    <button type="button" id="Next1" class="boton-formulario">Siguiente</button>
+                </div>
+                <div class="numPagina">
+                    Página 1 de 3
+                </div>                
+            </form>
+
+
+
+
+            <form id="Preguntas2">
+                <h3>Datos personales</h3>
+                
+                <div class="content-select">  
+                    <input type="number" name="Peso" placeholder="¿Cuanto pesas (kg)? (Ej:72,7)" step="0.1">
+                    <input type="number" name="PesoDeseado" placeholder="¿Cúal es tu peso deseado (kg)? (Ej:72,7)" step="0.1">                   
+                    <select name="nivel">
+                        <option value="-1" disabled selected>¿Qué nivel deportivo tienes?</option>
+                        <option value="Principiante">Principiante</option> 
+                        <option value="Intermedio">Intermedio</option> 
+                        <option value="Avanzado">Avanzado</option> 
+                    </select>
+                    <i></i>
+                    
+                    
+                    
+                </div>
+                <div class="campo">
+                    <button type="button" id="Next2" class="boton-formulario">Siguiente</button>
+                    <button type="button" id="Back1" class="boton-formulario">Anterior</button>                    
+                </div>
+                <div class="numPagina">
+                    Página 2 de 3
+                </div>                
+            </form>
+
+
+
+
+            <form id="Preguntas3">
+                <h3>Datos personales</h3>
+                
+                <div class="content-select">
+
+                    <select name="objetivo-depor">
+                        <option value="-1" disabled selected>¿Cúal es tu objetivo?</option>
+                        <option value="hombre">Compartir / Mejorar salud</option> 
+                        <option value="mujer">Mejorar rendimiento</option>                  
+                    </select>
+                    <i></i>
+
+                    <select name="Tipo de dieta">
+                        <option value="-1" disabled selected>¿Qué dieta sigues?</option>
+                        <option value="Regular">Regular</option> 
+                        <option value="Vegetariana">Vegetariana</option>
+                        <option value="Vegana">Vegana</option>                  
+                    </select>
+                    <i></i>                          
+                    
+                    <select name="tipoCuerpo">
+                        <option value="-1" disabled selected>¿Qué tipo de cuerpo tienes?</option>
+                        <option value="Ectomorfo">Ectomorfo</option>
+                        <option value="Mesomorfo">Mesomorfo</option> 
+                        <option value="Endomorfo">Endomorfo</option>                                       
+                    </select>
+                    <i></i>
+                    <div class="contenedor-textos">                        
+                        <a href="" class="CTA-Modal">¿Cómo saber que tipo de cuerpo tengo?</a>
+                    </div>                   
+
+                    
+                </div>
+                <div class="campo sigPag">
+                    <input class="boton-preguntas" type="submit" value="¡Quiero mi plan!">
+                    <button type="button" id="Back2" class="boton-formulario">Anterior</button>
+                    
+                </div>
+                <div class="numPagina">
+                    Página 3 de 3
+                </div>                
+            </form>         
+        </div>
+        <!-- End Preguntas -->
+
+
+
+
+
+
+
+
+
+        <div class="container-modal">
+            <div class="modal modal-close">
+                <div class="closeContainer">
+                    <p class="closeModalSomatotipos">X</p>
+                </div>
+                
+                <h2>Somatotipos</h2>
+                <img class="imgSomatotipos" src="images/somatotipos.jpg" alt="">
+                <div class="somatotiposDescripcionContainer">
+                    <h4 class="somatotipoTitulo">Ectomorfos</h4>
+                    <p class="somatotipoDescripcion">Músculos delgados, extremidades largas y hombros estrechos. Personas que por más que coman, 
+                       nunca sufrirán de sobrepeso gracias a su metabolismo rápido y a su facilidad para quemar calorías.
+                    </p>
+                </div>
+                <div class="somatotiposDescripcionContainer">
+                    <h4 class="somatotipoTitulo">Mesomorfos</h4>
+                    <p class="somatotipoDescripcion">Estructura ósea grande, físico atlético y músculos marcados. Personas que tienen una complexión 
+                       fuerte por naturaleza. Deben cuidar la dieta, pero no tienen que ser tan estrictos, pero sí se descuidan en exceso pueden ganar grasa.
+                    </p>
+                </div>
+                <div class="somatotiposDescripcionContainer">
+                    <h4 class="somatotipoTitulo">Endomorfos</h4>
+                    <p class="somatotipoDescripcion">Similares a los mesomorfos, aunque con más grasa corporal. De extremidades más cortas y con tendencia a ganar músculo y 
+                       grasa. Su metabolismo lento hace que no queme calorías tan fácilmente. Son las personas que más deben cuidar la alimentación.
+                    </p>
+                </div>
+            </div> 
+        </div>
+
+        <script src="JS/modalSomatotipos.js"></script>
+
+
+
+        <script>
+
+            var Preguntas1 = document.getElementById("Preguntas1");
+            var Preguntas2 = document.getElementById("Preguntas2");
+            var Preguntas3 = document.getElementById("Preguntas3");
+
+            var Next1 = document.getElementById("Next1");
+            var Next2 = document.getElementById("Next2");
+            var Back1 = document.getElementById("Back1");
+            var Back2 = document.getElementById("Back2");
+
+            Next1.onclick = function(){
+                Preguntas1.style.left = "-450px";
+                Preguntas2.style.left = "20px";
+            }
+
+            Back1.onclick = function(){
+                Preguntas1.style.left = "20px";
+                Preguntas2.style.left = "-450px";
+            }
+
+            Next2.onclick = function(){
+                Preguntas2.style.left = "-450px";
+                Preguntas3.style.left = "20px";
+            }
+            Back2.onclick = function(){
+                Preguntas2.style.left = "20px";
+                Preguntas3.style.left = "450px";
+            }
+
+        </script>
+
+
+    </body>
+
+</html>        

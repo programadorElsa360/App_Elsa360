@@ -1,0 +1,311 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+
+
+/*-- Preguntas -- */
+
+
+
+.Titulo{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.container{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background: #000000;
+    border: #ffffff solid ;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;    
+}
+
+h3{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #9BCB3B;
+    margin-top: -60px;
+    margin-bottom: 15px;
+}
+
+.container form{
+    width: 350px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    transition: 0.7s ease;
+}
+
+input[type="text"], [type="number"]{
+    display: block;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;    
+    width: 320px;
+    height: 33px;    
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background: white;
+    color: #000000;
+    border: none;
+    border-radius: 2px; 
+    text-align: center;
+}
+
+.content-select select{
+    display: block;
+	width: 320px;
+	cursor: pointer;
+  	height: 33px;
+  	outline: none; 
+  	border: 0;
+	border-radius: 2px;
+	background: white;
+	color: #000000;
+	font-size: 15px;
+    font-weight: 700;
+	color: #000000;
+    position: relative;
+    transition: all 0.25s ease;       
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;  
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+::placeholder{
+    color: #000000;
+    font-size: 14px;
+}
+
+.boton-formulario{
+    background: #9BCB3B;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 320px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s ease;   
+    border: #9BCB3B solid 1px; 
+}
+
+.boton-formulario:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+}
+
+.boton-preguntas{
+    background: #9BCB3B;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 320px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s ease;   
+    border: #9BCB3B solid 1px;
+}
+
+.boton-preguntas:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+}
+
+#Preguntas2{
+    left: 450px;
+}
+
+#Preguntas3{
+    left: 450px;
+}
+
+.numPagina{
+    font-size: 8px;
+    color: #ffffff;
+    text-align: right;
+    margin-top: 2px;
+    width: 330px;
+}
+
+@media screen and (min-width:1100px){
+    .Titulo{
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+
+/*SOMATOTIPOS*/
+
+.contenedor-textos{
+    text-align: right;
+    margin-top: -25px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.CTA-Modal{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+
+/* MODAL */
+
+.container-modal{
+    opacity: 0;
+    visibility: hidden;        
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;    
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 570px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.modal-close{
+    transform: translateY(-200%);
+}
+
+.closeContainer{
+    background-color: #9BCB3B;
+    right: 5px;
+    padding: 15px 10px;
+}
+
+.closeModalSomatotipos{
+    position: absolute;
+    font-weight: 800;
+    cursor: pointer;   
+    top: 5px;
+    right: 15px; 
+}
+
+.modal h2{
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.somatotiposDescripcionContainer{
+    width: 100%;
+}
+
+.somatotipoTitulo{
+    margin-bottom: 5px;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.somatotipoDescripcion{
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.imgSomatotipos{    
+    margin-top: 5px;
+    border-radius: 2px;
+    width: 90%;
+}
+
+@media screen and (max-width:1000px){
+    section{
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    section img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*-- End Preguntas -- */
+
+

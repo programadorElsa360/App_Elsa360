@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <link rel="icon" href="images/E-de-ELSA.ico">
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Aquí, se, coloca, cada, palabra, clave">
+        <meta name="description" content="Aquí se escribe, de que es la pagina">
+        <meta name="author" content="ELSA360 - E Learning Sports Academy | FND sas">
+        <meta name="copyright" content="ELSA360 - E Learning Sports Academy | FND sas">
+        <meta name="robots" content="noindex">
+        <title>Ingreso - ELSA360</title>
+        <link rel="stylesheet" href="css/login.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>        
+    </head>
+
+    <body>
+        <header class="header contenedor">
+
+            <div class="content-header">
+              <a href="index.html"><img src="images/elsa-Verde.png" alt="Logo ELSA360" title="Logo ELSA360"></a>  
+              <h1>Ingresa y sigue tu plan</h1>  
+               
+              
+              <form class="form" action="#" method="post">
+                  
+                  <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico" required="">                  
+                  <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required=""> 
+
+                  <div 
+                  class="checkbox"><input type="checkbox" onclick="mostrarContraseña()" id="mostrar" name="mostrar" value="mostrar"> Mostrar contraseña
+                  <a class="recuperarPassword" href="#">Recuperar Contraseña</a>
+                  </div>
+                  <input class="boton-envio" type="submit" value="Iniciar sesión"> <br>
+                  <a href="index.html" class="regresar">Regresa</a>
+            ó <a href="signup.html" class="ya-tengo">Regístrate</a>
+              </form>
+              
+            </div>
+            
+        </header>
+
+
+
+        <script>
+			function mostrarContraseña(){
+				var tipo = document.getElementById("password");
+				if(tipo.type == "password"){
+					tipo.type = "text";
+				}else{
+					tipo.type = "password";
+				}
+			}
+		</script>
+      
+    </body>
+
+</html>

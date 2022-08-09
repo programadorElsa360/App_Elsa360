@@ -1,0 +1,1598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*BODY*/
+body{
+    background-color: #000000;
+}
+/*END BODY*/
+
+
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(header1.jpg);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logoHeader{
+    height: 50px;
+    margin-left: 20px;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #9BCB3B;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #000000;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color:#9BCB3B;
+    transition: 0.5s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+@media screen and (min-width:1130px){
+    .logoHeader{
+        margin-left: 50px;
+    }
+
+    .SignUp{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    .Login{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+        
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 15px;
+        color: #9BCB3B;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover {
+        color:#9BCB3B;
+        text-decoration: underline;
+        transition: 0.5s;
+    }    
+
+    header{
+        background-image: url(header1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.Big-DescriptionContainerHeader{
+    width: 100%;    
+    text-align: center;
+}
+
+.Descrip1Header{    
+    background-color: #000000;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.Descrip-ExplHeader{
+    color: #ffffff;
+    height: 100%;
+}
+
+.titleDescripHeader{
+    text-align: center;
+    margin-bottom: 3px;
+    color: #ffffff;
+}
+
+.titleDescripHeader h1{
+    font-size: 56px;
+    line-height: 90%;
+}
+
+.titleDescripHeader h2{
+    font-size: 22px;
+}
+
+.paragraph-descriptionHeader{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonesHeader{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.button1{
+    display: block;
+    padding: 5px 10px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 700;    
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+.button2{
+    display: block;
+    padding: 5px 10px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 700;    
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.button2:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+
+@media (min-width:1100px){
+    .descriptionContainerHeader{
+        margin-top: 0px;       
+    }
+
+    .Big-DescriptionContainerHeader{
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .Descrip2Header{
+        width: 100%;
+    }
+
+    .Descrip1Header{
+        width: 33%;
+        height: 100vh;        
+    }
+    
+    .titleDescripHeader{
+        margin-top: 210px;
+        margin-bottom: 15px;        
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+    }
+
+    .titleDescripHeader h1{
+        font-size: 72px;
+    }
+
+    .titleDescripHeader h2{
+        font-size: 26px;
+    }
+
+    .paragraph-descriptionHeader{
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 18px;
+        width: 85%;
+        margin-bottom: 60px;
+    }
+
+    
+
+    .paragraph-description2{
+        text-align: left;
+        font-size: 16px;
+        width: 85%;
+        margin-left: 35px;
+    }
+
+    .botonesHeader{
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+    }
+
+    .button1{
+        width: 45%;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .button2{
+        width: 45%;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }    
+}
+
+
+
+
+
+
+/*ESTILOS FEATURES*/
+.featuresContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.titleFeatures{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.image-description{
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+.description-title{
+    color: #9BCB3B;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.PlanContainerFeatures{
+    width: 450px;
+    margin: 0px auto 0px;    
+    overflow: hidden;    
+    text-align: center;
+}
+
+.feature{
+    margin-bottom: 55px;
+}
+
+article{
+    width: 100%;
+}
+
+
+@media (min-width:830px){
+    .titleFeatures{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .PlanContainerFeatures{
+        width: 85%;
+        display: flex;
+    }
+
+    .feature{
+        margin-bottom: 0;
+        margin-right: 25px;
+        margin-left: 25px;
+    }   
+}
+
+
+
+
+
+
+/*Estilos Pricing*/
+.main-container{
+    width: 450px;
+    margin: 20px auto 20px;   
+    text-align: center;
+}
+
+article{
+    width: 100%;
+}
+
+/*---TABLA---*/
+
+.tabla{    
+    width: 100%;        
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-Tri{
+    background: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: #ffffff solid 1px;
+    border-right: #ffffff solid 1px;
+    border-top: #ffffff solid 1px;    
+}
+
+.container-Año{
+    background: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: #ffffff solid 1px;
+    border-right: #ffffff solid 1px;
+    border-top: #ffffff solid 1px;
+    border-bottom: #ffffff solid 1px;
+}
+
+.tituloDescripcion{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-bottom: -15px;
+    margin-top: -15px;
+    background-color: #ffffff;
+}
+
+.features-plan{
+    margin-top: 15px;
+    border-top: #ffffff solid 1px;
+}
+
+.features-plan li{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.tituloPricing{
+    font-size: 18px;
+    color: #9BCB3B;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-top: solid white 1px;
+    padding-top: 10px;
+}
+
+.price{
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.2s linear;
+}
+
+.iva{
+    font-size: 10px;
+}
+
+.Money{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.price-month{
+    color: #9BCB3B;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.botonPagar{
+    background: #9BCB3B;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 35%;    
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+}
+
+.botonPagar:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    border: solid #9BCB3B 1px;
+}
+
+.disclaimer-MVP{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.Subtitulo-pagina{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+
+/*tabla de ejemplo*/
+.titulosSemDia{
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+}
+
+.PlanContainer{
+    width: 570px;
+    margin: 20px auto -15px;    
+    overflow: hidden;    
+    text-align: center;
+    background: rgb(255, 255, 255);
+    margin-bottom: 45px;
+    border-bottom: #ffffff solid 1px;
+}
+
+article{
+    width: 100%;
+}
+
+.celda-semana{
+    border-right: #ffffff solid 1px;
+    border-top: #ffffff solid 1px;
+    border-left: #ffffff solid 1px;
+    background: #000000;
+    width: 100%;    
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.celda-dia{    
+    background: #9BCB3B;
+    width: 100%;    
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 24px;
+    border-left: #ffffff solid 1px;
+    border-right: #ffffff solid 1px;
+}
+
+.celda-entreno-diario{
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border-left: #ffffff solid 1px;
+    border-right: #ffffff solid 1px;
+    padding-left: 10px;
+    padding-right: 5px;
+    
+}
+
+.celda-entreno-diario-final{
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border-left: #ffffff solid 1px;    
+    border-right: #ffffff solid 1px; 
+    padding-left: 10px;
+    padding-right: 10px;  
+     
+}
+
+.link-psico{
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;    
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BorghDiarioTitulo{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.celda-entreno-diario-final select{
+    display: block;
+	cursor: pointer;
+  	padding: 7px 3px; 
+	background: #504c4c;
+	color: #ffffff;
+	font-size: 14px;
+    position: relative;
+    transition: all 0.25s ease;       
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;  
+    font-weight: 500;
+}
+
+.CTA-ModalBorg{
+    color: #ffffff;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.botonBorghDiario{
+    background-color: #000000;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 20px;    
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/* MODAL BORG */
+
+.container-modalBorg{
+    opacity: 0;
+    visibility: hidden;        
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;    
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBorg{
+    width: 570px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.modal-closeBorg{
+    transform: translateY(-200%);
+}
+
+.closeContainerBorg{
+    background-color: #9BCB3B;
+    right: 5px;
+    padding: 15px 10px;
+}
+
+.closeModalBorg{
+    position: absolute;
+    font-weight: 800;
+    cursor: pointer;   
+    top: 5px;
+    right: 15px; 
+}
+
+.modalBorg h2{
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.BorgDescripcionContainer{
+    width: 100%;
+}
+
+.BorgDescripcion{
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.imgBorg{    
+    margin-top: 15px;
+    border-radius: 2px;
+    width: 95%;
+}
+
+/* END MODAL BORG */
+
+
+
+
+/* MODAL NOMENCLATURA */
+
+.container-modalNomenclatura{
+    opacity: 0;
+    visibility: hidden;        
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;    
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalNomenclatura{
+    width: 470px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.modal-closeNomenclatura{
+    transform: translateY(-200%);
+}
+
+.closeContainerNomenclatura{
+    background-color: #9BCB3B;
+    right: 5px;
+    padding: 15px 10px;
+}
+
+.closeModalNomenclatura{
+    position: absolute;
+    font-weight: 800;
+    cursor: pointer;   
+    top: 5px;
+    right: 15px; 
+}
+
+.modalNomenclatura h2{
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.NomenclaturaDescripcionContainer{
+    width: 100%;
+}
+
+.NomenclaturaDescripcion{
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.imgNomenclatura{    
+    margin-top: 15px;
+    border-radius: 2px;
+    width: 420px;
+}
+
+/* END MODAL NOMENCLATURA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link-PF{
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 30px;    
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-nutri{
+    display: block;
+    margin-top: 20px;   
+    margin-bottom: 25px; 
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TitleGET{
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TotalGet{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.TotalGETtitle{
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 13px;
+    padding-bottom: 8px;
+    text-decoration: underline;
+}
+
+.GETcal{
+    font-size: 13px;
+}
+
+.GETgr{
+    font-size: 13px;
+}
+
+.GETDistribution{
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foodMommentsTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foodMomment{
+    font-size: 14px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    text-decoration: underline;    
+}
+
+.foodMommentCal{
+    font-size: 13px;    
+    padding-bottom: 8px;
+}
+
+.foodMommentCarbos{
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.foodMommentProtein{
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.foodMommentFat{
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.foodMommentCalTitle{
+    font-size: 13px;
+}
+
+.foodMommentCarbosTitle{
+    font-size: 13px;
+    display: flex;
+}
+
+.foodMommentProteinTitle{
+    font-size: 13px;
+    display: flex;
+}
+
+.foodMommentFatTitle{
+    font-size: 13px;
+    display: flex;
+}
+
+.grFoodMomment{
+    font-size: 9px;
+    color: #9BCB3B;
+}
+
+.CTA-ModalNomenclatura{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;    
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 3px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-ciclismo{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;    
+    text-decoration: none;
+    font-size: 14px;
+    color: #9BCB3B;
+    border: #9BCB3B solid 1px;
+    padding: 3px 3px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warmup{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warmupTime{
+    font-size: 13px;
+}
+
+.trabajo{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcionDelEjercicio{
+    font-size: 13px;
+}
+
+.trabajoSeries{
+    font-size: 13px;
+}
+
+.coolDown{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coolDownTime{
+    font-size: 13px;
+}
+
+.totalTimeTitle{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.totalTime{
+    font-size: 13px;
+}
+
+
+
+@media (min-width:1100px){
+    .main-container{
+        width: 924px;
+        display: flex;
+    }
+
+    .titulo-pagina{
+        width: 1100px;
+    }
+
+    .Subtitulo-pagina{
+        width: 1100px;
+    }
+
+    .parrafoPlanes{
+        width: 924px;
+    }
+
+    .celda-iconos{     
+        width: 924px;
+    }
+
+    .container-Tri{
+        margin-right: 10px;
+        border: #ffffff solid 1px;
+    }
+    
+    .container-Año{
+        margin-left: 10px;
+        border: #ffffff solid 1px;
+    }
+
+    .disclaimer-MVP{        
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 10px;
+   }     
+}
+
+@media (min-width:1400px){
+    .titulosSemDia{
+        width: 90%;
+    }
+
+    .PlanContainer{
+        width: 90%;
+        display: flex;
+    }  
+
+    .celda-entreno-diario{
+        padding-bottom: 32767px;
+        margin-bottom: -32767px;
+       }
+    
+    .celda-entreno-diario-final{
+     padding-bottom: 32767px;
+     margin-bottom: -32767px;    
+    }
+
+    .botonBorghDiario{
+        padding: 5px 5px;
+    }
+}
+
+/* END PRICING */
+
+
+
+
+
+
+/*ESTILOS DESCRIPTION 1*/
+.descriptionContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.titleDescrip{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.photo-description{
+    height: 300px;
+}
+
+.Descrip-Expl{
+    color: #ffffff;
+    height: 100%;
+}
+
+.Big-DescriptionContainer{
+    width: 550px;
+    margin: 0px auto 0px;    
+    overflow: hidden;    
+    text-align: center;
+}
+
+.photo{
+    text-align: right;
+    width: 100%;
+}
+
+.paragraph-description{
+    margin-bottom: 30px;
+    line-height: 175%;
+}
+
+.button-paragraph-description{
+    padding: 8px 30px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.button-paragraph-description:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+.container-btn-description{
+    margin-bottom: 50px;
+}
+
+@media (min-width:1100px){
+    .descriptionContainer{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .titleDescrip{
+        font-size: 26px;
+        margin-bottom: 20px;        
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+    }
+
+    .paragraph-description{
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+        width: 75%;
+    }
+
+    .Big-DescriptionContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo-description{
+        height: 400px;
+    }
+
+    .paragraph-description2{
+        text-align: left;
+        font-size: 16px;
+        width: 75%;
+        margin-left: 35px;
+    }
+
+    .container-btn-description{
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+    }
+    
+}
+
+/* END ESTILOS DESCRIPTION 1 */
+
+
+
+
+
+/*ESTILOS DESCRIPTION 2*/
+.descriptionContainer2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.titleDescrip2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.photo-description2{
+    height: 300px;
+}
+
+.Descrip-Expl2{
+    color: #ffffff;
+    height: 100%;
+}
+
+.Big-DescriptionContainer2{
+    width: 550px;
+    margin: 0px auto 0px;    
+    overflow: hidden;    
+    text-align: center;
+}
+
+.photo2{
+    text-align: left;
+    width: 100%;
+}
+
+.paragraph-description2{
+    margin-bottom: 30px;    
+}
+
+.button-paragraph-description2{
+    padding: 8px 30px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.button-paragraph-description2:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+.container-btn-description2{
+    margin-bottom: 12px;
+}
+
+
+@media (min-width:1100px){
+    .titleDescrip2{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+    .paragraph-description2{
+        text-align: left;
+        font-size: 16px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Big-DescriptionContainer2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descriptionContainer2{
+        margin-bottom: 150px;
+        margin-top: 150px;
+    }
+
+    .photo-description2{
+        height: 400px;
+    }   
+
+    .container-btn-description2{
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    
+}
+
+/* END ESTILOS DESCRIPTION 2 */
+
+
+/* ESTILOS CTA*/
+
+.cta-section{
+    background: url(FondoHeader1.jpg) center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 30px;
+}
+
+.background-overlay{
+    background: linear-gradient(to right, rgba(95, 91, 91, 0.116), rgba(0, 0, 0, 0.425));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-content{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.col-content{
+    color: #ffffff;
+}
+
+.content-title{
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cta-paragraph{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn1-cta{
+    margin-right: 90px;
+    padding: 8px 30px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.btn1-cta:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+.btn2-cta{
+    margin-right: 40px;
+    padding: 8px 30px;
+    background-color: #9BCB3B;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.btn2-cta:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+    transition: 0.5s;
+    border: #9BCB3B solid 1px;
+}
+
+
+/* END ESTILOS CTA*/
+
+
+
+
+
+
+/*ESTILOS FOOTER*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #00396c;
+    z-index: 100;
+    margin-top: 50PX;
+  }
+
+  .containerFooter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+  
+.cardFooter1{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.cardFooter2{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.cardFooter3{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.cardFooter4{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.titleFooter1{    
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter2{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter3{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter4{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.textFooter{
+    font-size: 10px;    
+    margin-bottom: 35px;
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+.SocialtitleFooter{    
+    color: #9BCB3B;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.linkSocialFooter{
+    font-size: 20px;
+    text-decoration: none;    
+    color: #ffffff;   
+    margin-right: 20px;
+}
+
+.linkSocialFooter:hover{
+    color: #9BCB3B;
+}
+
+.LinkListFooter1{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.LinkListFooter2{
+    margin-left: 40px;
+}
+
+.LinkListFooter3{
+    margin-left: 40px;
+}
+
+.LinkListFooter4{
+    margin-left: 40px;
+}
+
+.listItem{
+    margin-top: 10px;
+}
+
+.linkFooter2{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.linkFooter3{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.linkFooter4{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.rights{
+    margin-bottom: 15px;
+}
+
+.footer-rigths{
+    font-size: 8px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 100;
+}
+
+.link-Footer{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*END ESTILOS FOOTER*/
+
+
+
+
+/*estilos para BOTON DE WHATS APP*/
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:1000;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}

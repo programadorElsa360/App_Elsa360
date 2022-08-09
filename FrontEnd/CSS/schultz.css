@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*BODY*/
+body{
+    background-color: #000000;
+    align-items: center;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    
+}
+/*END BODY*/
+
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.logoHeader{
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #9BCB3B;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #000000;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color:#9BCB3B;
+    transition: 0.5s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+
+
+
+
+@media screen and (min-width:1130px){
+    .logoHeader{
+        margin-left: 50px;
+    }
+
+    .SignUp{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    .Login{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+        
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 15px;
+        color: #9BCB3B;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover {
+        color:#9BCB3B;
+        text-decoration: underline;
+        transition: 0.5s;
+    }    
+}
+
+/*END HEADER*/
+
+
+
+
+
+/* ALCOHOL*/
+
+.imageTop{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image{
+    width: 70%;
+}
+
+.tituloPagina{
+    text-align: center;
+}
+
+.tituloPagina h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.tituloPaginaSchultz{
+    text-align: center;
+}
+
+.tituloPaginaSchultz h1{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.parrafoInicial{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.TituloMedidasAlcohol{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MedidasAlcoholContainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.MedidasAlcoholTabla{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #9BCB3B solid 1px;
+}
+
+.MedidasAlcoholTabla td{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14PX;
+}
+
+
+
+.efectosnegativosConatiner{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.tituloefectosnegativos{
+    margin-top: 70px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.numberefectosnegativos{
+    color: #9BCB3B;
+    font-weight: 700;
+    font-size: 8px;
+}
+
+.HerramientasAvanz{
+    color: #9BCB3B;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.numberPinchazo{
+    color: #9BCB3B;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.container1{
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card{
+    background: #000000;
+    color: #ffffff;
+    height: auto;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.card-link:hover{
+    background-color: #9BCB3B;
+    color: #000000;
+    transform: scale(1.04);
+}
+
+
+.card-link{
+    font-size: 14px;
+    color: #9BCB3B;
+    font-weight: 500;
+    border: #9BCB3B solid 1px;
+    border-radius: 2px;
+    padding: 2px 10px;
+}
+
+.parrafoInicialRelaxPasiva{
+    text-align: center;
+}
+
+
+@media screen and (min-width:1000px){
+    .image{
+        width: 700px;
+    }
+
+    .efectosnegativosConatiner{
+        width: 75%;
+    }
+
+    .parrafoInicial{
+        width: 75%;
+    }
+
+    .container1{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1300px){
+    .efectosnegativosConatiner{
+        width: 75%;
+    }
+
+    .parrafoInicial{
+        width: 75%;
+    }
+
+    .container1{
+        display: flex;
+    }
+}
+
+
+
+
+/*END ALCOHOL*/
+
+
+
+/*ESTILOS FOOTER*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #00396c;
+    z-index: 100;
+    margin-top: 15PX;
+  }
+
+  .containerFooter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+  
+.cardFooter1{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.cardFooter2{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.cardFooter3{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.cardFooter4{
+    background: #000000;
+    color: #ffffff;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.titleFooter1{    
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter2{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter3{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.titleFooter4{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9BCB3B;
+    margin-left: 40px;
+    border-bottom: #9BCB3B solid 1px;
+    padding-bottom: 10px;
+}
+
+.textFooter{
+    font-size: 10px;    
+    margin-bottom: 35px;
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+.SocialtitleFooter{    
+    color: #9BCB3B;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.linkSocialFooter{
+    font-size: 20px;
+    text-decoration: none;    
+    color: #ffffff;   
+    margin-right: 20px;
+}
+
+.linkSocialFooter:hover{
+    color: #9BCB3B;
+}
+
+.LinkListFooter1{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.LinkListFooter2{
+    margin-left: 40px;
+}
+
+.LinkListFooter3{
+    margin-left: 40px;
+}
+
+.LinkListFooter4{
+    margin-left: 40px;
+}
+
+.listItem{
+    margin-top: 10px;
+}
+
+.linkFooter2{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.linkFooter3{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.linkFooter4{
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.rights{
+    margin-bottom: 15px;
+}
+
+.footer-rigths{
+    font-size: 8px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 100;
+}
+
+.link-Footer{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*END ESTILOS FOOTER*/

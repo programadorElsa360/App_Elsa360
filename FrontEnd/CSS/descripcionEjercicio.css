@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*BODY*/
+body{
+    background-color: #000000;
+}
+
+
+/*END BODY*/
+
+
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.logoHeader{
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #9BCB3B;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #000000;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color:#9BCB3B;
+    transition: 0.5s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+
+
+
+
+@media screen and (min-width:1130px){
+    .logoHeader{
+        margin-left: 50px;
+    }
+
+    .SignUp{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    .Login{
+        padding: 3px 10px;
+        background-color: #000000;
+        border-radius: 2px;
+        border: #9BCB3B solid 1px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+        
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 15px;
+        color: #9BCB3B;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover {
+        color:#9BCB3B;
+        text-decoration: underline;
+        transition: 0.5s;
+    }    
+}
+
+/*END HEADER*/
+
+
+
+
+
+/*Descripción Ejercicio*/
+.titulo{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video{
+    text-align: center;
+} 
+
+.descripcion{
+    color: white;
+    width: 610px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+
+
+.seriesYsets{
+    color: white;
+    width: 610px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.principiante{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nivelPrincipiante{
+    color: #9BCB3B;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.intermedio{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nivelIntermedio{
+    color: #9BCB3B;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.avanzado{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.nivelAvanzado{
+    color: #9BCB3B;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width:830px){
+    .titulo{
+        width: 100%;
+        font-size: 32px;
+    }
+    .descripcion{
+        width: 850px;      
+        margin-top: 70px;  
+    }
+
+    .cargaEntreno{
+        display: flex;
+        text-align: center;
+    }
+
+    .seriesYsets{
+        width: 850px;
+    }
+
+    .principiante{
+        width: 33%;
+    }
+    
+    .intermedio{
+        width: 33%;
+    }
+    
+    .avanzado{
+        width: 33%;
+    }
+
+}

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*BODY*/
+
+
+body{
+    background-color: #000000;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    
+}
+
+/*END BODY*/
+
+.header{
+    height: 100vh;
+    display: flex;    
+    color: #fff;
+}
+
+.contenedor{
+    margin: auto;
+    text-align: center;
+}
+
+.content-header{
+    z-index: 2;    
+    margin: auto;
+}
+
+.content-header img{
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.content-header h1{
+    font-size: 35px;
+}
+
+.form{
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    outline: none;
+    border: none;    
+    font-weight: 700;
+    font-size: 17px;    
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    background: white;
+    color: #000000;
+    border-radius: 2px;
+    display: block;
+}
+
+.boton-envio{
+    background: #9BCB3B;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 300px;    
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s ease;   
+    border: #9BCB3B solid 1px;
+}
+
+.boton-envio:hover{
+    background-color: #000000;
+    color: #9BCB3B;
+}
+
+.regresar{
+    font-size: 10px;    
+    text-decoration: underline;
+    color: white;       
+}
+
+.ya-tengo{
+    margin-top:-50px;
+    font-size: 10px;
+    text-decoration: underline;
+    color: white;
+}
+
+/*estilos para mostrar la contraseña*/
+
+.checkbox{
+    font-size: 10px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.input-group-text{
+    font-size: 10px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.recuperarPassword{
+    color: white;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+
+@media (max-width: 960px){
+    .content-header{
+        z-index: 2;
+    }
+
+    input[type="email"], input[type="password"]{
+        display: block;
+    }
+
+    .contenedor{
+        padding: 0 3rem 0 3rem;
+    }    
+}
+
+
+
